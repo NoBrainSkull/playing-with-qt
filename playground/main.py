@@ -5,7 +5,7 @@ from PySide2.QtWidgets import QApplication, QPushButton
 from PySide2.QtCore import Slot, QUrl
 from PySide2.QtQuick import QQuickView
 
-profile = QUrl.fromLocalFile("/home/blue/sources/python-qt/playground/img/profile.jpg")
+profile = QUrl.fromLocalFile("img/profile.jpg")
 username = "blue"
 pseudo = "@NoBrainSkull"
 
