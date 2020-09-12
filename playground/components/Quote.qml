@@ -6,10 +6,10 @@ Item {
   id: "application_window"
 
   property alias authorText: author.text
-  property alias authorTextSize: author.font.pixelSize
+  property alias authorTextSize: author.font.pointSize
   property alias authorTextColor: author.color
   property alias quoteText: quote.text
-  property alias quoteTextSize: quote.font.pixelSize
+  property alias quoteTextSize: quote.font.pointSize
   property alias quoteTextColor: quote.color
   property int margins: 50
 
@@ -26,7 +26,7 @@ Item {
       Layout.preferredWidth: parent.width
       horizontalAlignment: Text.AlignRight
       text: "« Tout ce qu'on m'a enseigné, toutes les sciences humaines que j'ai étudiées et approfondies, toutes les recherches enfin que j'ai faites sur le principe et l'essence des choses, ne m'ont servi qu'à savoir que je ne sais rien. »"
-      font.pixelSize: 15
+      font.pointSize: 15
       textFormat: Text.RichText
       wrapMode: Text.Wrap
     }
@@ -34,7 +34,7 @@ Item {
       id: "author"
       Layout.preferredWidth: author.contentWidth
       Layout.alignment: Qt.AlignRight
-      font.pixelSize: 20
+      font.pointSize: 20
       text: "Socrates"
     }
   }
