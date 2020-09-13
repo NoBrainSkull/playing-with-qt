@@ -16,7 +16,6 @@ view.setSource(url)
 
 rootElement = view.rootObject()
 
-print(options.items())
 for (optName, optValue) in options.items():
     rootElement.setProperty(optName, optValue)
 

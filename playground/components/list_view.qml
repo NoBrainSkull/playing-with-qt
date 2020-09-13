@@ -5,7 +5,9 @@ Rectangle {
   id: "window"
   color: "#263238"
 
+  property alias entries: list.entries
+
   List {
-    listItems: [{ label: 'A pretty label', color: '#00F' }]
+    id: "list"
   }
 }

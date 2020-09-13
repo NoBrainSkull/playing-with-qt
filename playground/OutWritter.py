@@ -5,5 +5,8 @@ class OutWritter(QObject):
 
     @Slot(str, result=str)
     def write(self, output):
-        sys.stdout.write(output)
-        sys.stdout.flush()
+        try:
+            print(output, flush=True)
+        except (BrokenPipeError, IOError):
+            pass
+        sys.stderr.close()
